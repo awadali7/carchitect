@@ -1,0 +1,150 @@
+.spotlightText::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+span.scroll-down-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.scroll-down-box-image-div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+span.scroll-down-box-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://arwa-public-assets-bucket.s3.ap-south-1.amazonaws.com/website/scroll-down-text.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: rotate(180deg);
+    animation: word-rotate 15s infinite;
+}
+
+span.mouse {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+@keyframes word-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+span.common-button:hover {
+    background: #60d6ff;
+}
+span.common-button.no-color:hover {
+    background: unset;
+}
+span.common-button:hover span {
+    transform: rotate(-36deg);
+}
+
+@media all and (max-width: 980px) {
+    span.scroll-down-box {
+        width: 70px;
+        height: 70px;
+    }
+    span.mouse {
+        width: 30px;
+    }
+    section.banner-section ul li span {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
+}
+
+@media all and (max-width: 890px) {
+    span.scroll-down-box {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    section.spotlight span.heading-shade {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 50%;
+        filter: blur(17px);
+        background-color: #13181a;
+        display: block;
+    }
+    section.spotlight span.heading-shade span.blur-shade {
+        display: block;
+        filter: blur(50px);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    span.scroll-down-box {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+    span.scroll-down-box span.mouse {
+        width: 25px;
+    }
+    span.scroll-down-box span.mouse img.mouse-icon {
+        display: none;
+    }
+    span.scroll-down-box span.mouse img.hand-icon {
+        display: block;
+    }
+}
+
+@media all and (max-width: 480px) {
+    span.scroll-down-box {
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+    }
+}
