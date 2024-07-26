@@ -22,8 +22,8 @@ const AboutUs = () => {
                     <p className="text-lg font-light mt-5 mb-20 text-[#7F7F7F]">
                         Expert automotive care that elevates your ride. Our
                         skilled technicians use advanced tools to diagnose,
-                        repair, and enhance your vehicle's performance. From
-                        routine checks to complex fixes, we ensure every
+                        repair, and enhance your vehicle&apos;s performance.
+                        From routine checks to complex fixes, we ensure every
                         component works in harmony, transforming your daily
                         drive into a superior experience.
                     </p>
